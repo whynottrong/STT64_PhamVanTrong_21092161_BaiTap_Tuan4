@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            margin: auto;
+            width: 1000px;
+        }
+        header{
+            background-color: #304c7c;
+            color: white;
+            display: flex;
+            height: 150px;
+        }
+        header h1, h4{
+            margin: 0px;
+            
+        }
+        .header1{
+            flex:1;
+        }
+        .img1{
+            height: 100%;
+        }
+        .header2{
+            flex:3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .header3{
+            flex:6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .search{
+            display: flex;
+            justify-content: end;
+            padding: 20px;
+        }
+        .search .btn{
+            margin-left: 10px;
+        }
+        .menu1{
+            display: flex;
+            margin: 0px;
+            position: relative;
+            justify-content: space-around;
+        }
+        .menu1 li{
+            list-style: none;
+            background-color: #4074b4;
+            padding: 15px;
+            margin-bottom: 5px;
+
+        }
+        .menu1 li a{
+            text-decoration: none;
+            color: white;
+        }
+        .menu1 li:hover{
+            background-color: cadetblue;
+        }
+        .menu2{
+            display: none;
+            margin-top: 15px;
+            width: 103px;
+            margin-left: -55px;
+            
+        }
+        .menu1 li:hover .menu2{
+            display: block;
+            position: absolute;
+        }
+        .menu2 li{
+            margin: 0px;
+            width: 100%;
+            margin-bottom: 3px;
+        }
+        .menu2 li:hover{
+            background-color: cadetblue;
+        }
+        .box2{
+            background-color: antiquewhite;
+            height: 900px;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <header>
+                <div class="header1">
+                    <img class="img1" src="../img/flower.png" alt="">
+                </div>
+                <div class="header2">
+                    <h1>FlowerBox 360</h1>
+                    <h4>..to get your daily dose of luxury roses!</h4>
+
+                </div>
+                <div class="header3">
+                    <div class="search">
+                        <input type="search" placeholder="Search the site">
+                        <button class="btn">GO</button>
+                    </div>
+                    <div>
+                        <ul class="menu1">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Promotion</a></li>
+                            <li><a href="#">Git Baskets</a></li>
+                            <li>
+                                <a href="#">Flower Services</a>
+                                <ul class="menu2">
+                                    <li>Link1</li>
+                                    <li>Link2</li>
+                                    <li>Link3</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="box2">
+        </div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
